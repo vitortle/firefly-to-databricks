@@ -1,0 +1,3 @@
+This is a simple project to import data from a local firefly-iii(https://github.com/firefly-iii/firefly-iii) instance into databricks.
+
+If you want to clone this project, you'll have to clone the cred template file and fill in with your information.
