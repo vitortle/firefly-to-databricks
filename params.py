@@ -1,0 +1,10 @@
+firefly_table_list = ['transactions'
+                      , 'transaction_journals'
+                      , 'accounts'
+                      , 'transaction_types'
+                      , 'category_transaction_journal'
+                      , 'categories'
+                      , 'budget_transaction_journal'
+                      , 'budgets'
+                      , 'bills'
+                      ]
