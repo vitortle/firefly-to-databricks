@@ -1,6 +1,7 @@
 firefly_table_list = ['transactions'
                       , 'transaction_journals'
                       , 'accounts'
+                      , 'account_types'
                       , 'transaction_types'
                       , 'category_transaction_journal'
                       , 'categories'
