@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: firefly_raw
+    database: firefly
+    schema: raw
+    tables:
+      - name: bz_account_types
+      - name: bz_accounts
+      - name: bz_bills
+      - name: bz_budget_transaction_journal
+      - name: bz_budgets
+      - name: bz_categories
+      - name: bz_category_transaction_journal
+      - name: bz_transaction_journals
+      - name: bz_transaction_types
+      - name: bz_transactions
