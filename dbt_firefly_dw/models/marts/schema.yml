@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: fct_transactions
+    columns:
+      - name: journal_id
+        data_type: bigint
+        tests:
+          - not_null
+
+      - name: created_at
+        data_type: timestamp
+
+      - name: updated_at
+        data_type: timestamp
+
+      - name: transaction_type_id
+        data_type: bigint
+
+      - name: category_id
+        data_type: bigint
+
+      - name: description
+        data_type: string
+
+      - name: transaction_journal_datetime
+        data_type: timestamp
+
+      - name: transaction_journal_date
+        data_type: date
+
+      - name: transaction_id
+        data_type: bigint
+        tests:
+          - not_null
+          - unique
+
+      - name: amount
+        data_type: double

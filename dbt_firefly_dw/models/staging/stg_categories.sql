@@ -1,5 +1,5 @@
 with source as (
-    select * from {{ source('firefly_raw', 'bz_accounts') }}
+    select * from {{ source('firefly_raw', 'bz_categories') }}
 ),
 renamed as (
     SELECT
