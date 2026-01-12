@@ -13,6 +13,8 @@ final as (
         transaction_journal_date, 
         transaction_id, 
         account_id,
+    	transaction_group_id,
+		url,
         amount 
     from transactions
 )

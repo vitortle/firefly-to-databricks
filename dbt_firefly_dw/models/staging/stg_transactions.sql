@@ -22,6 +22,8 @@ SELECT
 	cast(tj.date as date) as transaction_journal_date,
 	t.id as transaction_id,
 	t.account_id,
+	tj.transaction_group_id,
+	concat("https://firefly.insidedatalab.com/transactions/show/", tj.transaction_group_id) url,
 	t.amount
 FROM
 	transaction_journals tj
