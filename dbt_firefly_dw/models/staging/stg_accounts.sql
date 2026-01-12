@@ -15,6 +15,6 @@ renamed as (
 FROM s_bz_accounts a
  LEFT JOIN s_bz_account_types at on 
    a.account_type_id = at.id
-WHERE deleted_at IS NULL
+-- WHERE deleted_at IS NULL
 )
 select * from renamed

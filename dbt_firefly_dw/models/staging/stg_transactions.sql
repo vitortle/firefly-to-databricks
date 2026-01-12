@@ -21,6 +21,7 @@ SELECT
 	tj.date as transaction_journal_datetime,  
 	cast(tj.date as date) as transaction_journal_date,
 	t.id as transaction_id,
+	t.account_id,
 	t.amount
 FROM
 	transaction_journals tj
@@ -29,7 +30,7 @@ left join transactions_ t on
 left join transaction_types typ on 
 	typ.id = tj.transaction_type_id
 left join category_transaction_journal catj on 
-	catj.id = tj.id
+	catj.transaction_journal_id = tj.id
 order by
 	date asc
 )

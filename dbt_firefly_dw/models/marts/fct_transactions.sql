@@ -12,6 +12,7 @@ final as (
         transaction_journal_datetime, 
         transaction_journal_date, 
         transaction_id, 
+        account_id,
         amount 
     from transactions
 )

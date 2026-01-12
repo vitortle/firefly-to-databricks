@@ -11,7 +11,7 @@ SELECT
 FROM
 	source
 where 
-	deleted_at IS NOT NULL
+	-- deleted_at IS NULL
 )
 select * from renamed
 

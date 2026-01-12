@@ -11,6 +11,6 @@ renamed as (
 	name AS category_name
 FROM
 	source
-WHERE deleted_at IS null
+-- WHERE deleted_at IS null
 )
 select * from renamed
