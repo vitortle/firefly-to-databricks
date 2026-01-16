@@ -33,6 +33,8 @@ left join transaction_types typ on
 	typ.id = tj.transaction_type_id
 left join category_transaction_journal catj on 
 	catj.transaction_journal_id = tj.id
+WHERE 
+	deleted_at IS NULL
 order by
 	date asc
 )
