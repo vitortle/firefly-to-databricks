@@ -35,6 +35,7 @@ left join category_transaction_journal catj on
 	catj.transaction_journal_id = tj.id
 WHERE 
 	tj.deleted_at IS NULL
+	AND tj.user_id = 1
 order by
 	date asc
 )
